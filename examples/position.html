@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script async src="https://cdn.jsdelivr.net/npm/es-module-shims@1.3.0/dist/es-module-shims.js"></script>
+  <script type="importmap">
+    {
+      "imports": {
+        "@hotwired/stimulus": "https://cdn.jsdelivr.net/npm/@hotwired/stimulus@3.0.1/dist/stimulus.js",
+        "@kanety/stimulus-tooltip": "../dist/index.module.js"
+      }
+    }
+  </script>
+  <script type="module">
+    import { Application, Controller } from '@hotwired/stimulus';
+    import TooltipController from '@kanety/stimulus-tooltip';
+    const application = Application.start();
+    application.register('tooltip', TooltipController);
+  </script>
+  <link rel="stylesheet" href="../dist/index.css"></link>
+</head>
+<body style="padding-left: 120px;">
+  <h1>Top start</h1>
+  <span class="st-tooltip"
+        data-controller="tooltip"
+        data-action="mouseover->tooltip#show mouseout->tooltip#hide"
+        data-tooltip-position-value="top-start">
+    <span data-tooltip-target="content">
+      Content Content Content Content Content Content Content Content Content Content<br>
+      Content Content Content Content Content Content Content Content Content Content
+    </span>
+    <span class="st-tooltip__tip" data-tooltip-target="tip">
+      Tooltip Tooltip<br>
+      Tooltip Tooltip
+    </span>
+  </span>
+
+  <h1>Top end</h1>
+  <span class="st-tooltip"
+        data-controller="tooltip"
+        data-action="mouseover->tooltip#show mouseout->tooltip#hide"
+        data-tooltip-position-value="top-end">
+    <span data-tooltip-target="content">
+      Content Content Content Content Content Content Content Content Content Content<br>
+      Content Content Content Content Content Content Content Content Content Content
+    </span>
+    <span class="st-tooltip__tip" data-tooltip-target="tip">
+      Tooltip Tooltip<br>
+      Tooltip Tooltip
+    </span>
+  </span>
+
+  <h1>Bottom start</h1>
+  <span class="st-tooltip"
+        data-controller="tooltip"
+        data-action="mouseover->tooltip#show mouseout->tooltip#hide"
+        data-tooltip-position-value="bottom-start">
+    <span data-tooltip-target="content">
+      Content Content Content Content Content Content Content Content Content Content<br>
+      Content Content Content Content Content Content Content Content Content Content
+    </span>
+    <span class="st-tooltip__tip" data-tooltip-target="tip">
+      Tooltip Tooltip<br>
+      Tooltip Tooltip
+    </span>
+  </span>
+
+  <h1>Bottom end</h1>
+  <span class="st-tooltip"
+        data-controller="tooltip"
+        data-action="mouseover->tooltip#show mouseout->tooltip#hide"
+        data-tooltip-position-value="bottom-end">
+    <span data-tooltip-target="content">
+      Content Content Content Content Content Content Content Content Content Content<br>
+      Content Content Content Content Content Content Content Content Content Content
+    </span>
+    <span class="st-tooltip__tip" data-tooltip-target="tip">
+      Tooltip Tooltip<br>
+      Tooltip Tooltip
+    </span>
+  </span>
+
+  <h1>Left start</h1>
+  <span class="st-tooltip"
+        data-controller="tooltip"
+        data-action="mouseover->tooltip#show mouseout->tooltip#hide"
+        data-tooltip-position-value="left-start">
+    <span data-tooltip-target="content">
+      Content Content Content Content Content Content Content Content Content Content<br>
+      Content Content Content Content Content Content Content Content Content Content
+    </span>
+    <span class="st-tooltip__tip" data-tooltip-target="tip">
+      Tooltip Tooltip<br>
+      Tooltip Tooltip
+    </span>
+  </span>
+
+  <h1>Left end</h1>
+  <span class="st-tooltip"
+        data-controller="tooltip"
+        data-action="mouseover->tooltip#show mouseout->tooltip#hide"
+        data-tooltip-position-value="left-end">
+    <span data-tooltip-target="content">
+      Content Content Content Content Content Content Content Content Content Content<br>
+      Content Content Content Content Content Content Content Content Content Content
+    </span>
+    <span class="st-tooltip__tip" data-tooltip-target="tip">
+      Tooltip Tooltip<br>
+      Tooltip Tooltip
+    </span>
+  </span>
+
+  <h1>Right start</h1>
+  <span class="st-tooltip"
+        data-controller="tooltip"
+        data-action="mouseover->tooltip#show mouseout->tooltip#hide"
+        data-tooltip-position-value="right-start">
+    <span data-tooltip-target="content">
+      Content Content Content Content Content Content Content Content Content Content<br>
+      Content Content Content Content Content Content Content Content Content Content
+    </span>
+    <span class="st-tooltip__tip" data-tooltip-target="tip">
+      Tooltip Tooltip<br>
+      Tooltip Tooltip
+    </span>
+  </span>
+
+  <h1>Right end</h1>
+  <span class="st-tooltip"
+        data-controller="tooltip"
+        data-action="mouseover->tooltip#show mouseout->tooltip#hide"
+        data-tooltip-position-value="right-end">
+    <span data-tooltip-target="content">
+      Content Content Content Content Content Content Content Content Content Content<br>
+      Content Content Content Content Content Content Content Content Content Content
+    </span>
+    <span class="st-tooltip__tip" data-tooltip-target="tip">
+      Tooltip Tooltip<br>
+      Tooltip Tooltip
+    </span>
+  </span>
+</body>
+</html>
