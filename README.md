@@ -10,7 +10,7 @@ A stimulus controller for simple tooltip.
 
 Install from npm:
 
-    $ npm install @kanety/stimulus-tooltip --save
+    $ npm i stimulus-tooltip --save
 
 ## Usage
 
